@@ -67,6 +67,7 @@ These results demonstrate the robustness of YOLOv8 in real-world conditions for 
 | **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
 
 ## Cite
+
 @INPROCEEDINGS{11022569,
   author={Hossen, Md Shaharia and Rimi, Maria Akter and Rahman, Tarek and Saad, Sakib Mahmood and Rahman, Raiyan},
   booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)}, 
@@ -78,6 +79,6 @@ These results demonstrate the robustness of YOLOv8 in real-world conditions for 
   keywords={Deep learning;Image segmentation;Computer vision;Head;Road accidents;Pipelines;Mortality;Real-time systems;Road safety;Safety;YOLOv8;VGG16;CNN;Helmet detection;Computer Vision;Image Processing;Deep Learning;Reducing Misclassification;Traffic management},
   doi={10.1109/ICCIT64611.2024.11022569}}
 
-##Contact
+## Contact
 For any queries, please contact us at trahman221182@bscse.uiu.ac.bd
 
