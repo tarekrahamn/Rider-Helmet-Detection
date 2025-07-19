@@ -66,7 +66,7 @@ These results demonstrate the robustness of YOLOv8 in real-world conditions for 
 | Aboah (YOLOv8 + TTA)        | 95.3%| 91.8%     | –      |
 | **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
 
-##Cite
+## Cite
 @INPROCEEDINGS{11022569,
   author={Hossen, Md Shaharia and Rimi, Maria Akter and Rahman, Tarek and Saad, Sakib Mahmood and Rahman, Raiyan},
   booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)}, 
