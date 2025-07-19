@@ -37,5 +37,32 @@ This project tackles road safety concerns by automatically detecting two-wheeler
 ---
 
 ## 🧠 Model Architecture
-<img width="651" height="548" alt="Screenshot 2025-07-19 111539" src="https://github.com/user-attachments/assets/b3d08f5c-cec1-4263-96cd-6c98ad1b1267" />
+<img width="644" height="821" alt="Screenshot 2025-07-19 111113" src="https://github.com/user-attachments/assets/67b78607-7f98-45af-9ca1-2b7e4aba90b1" />
+## 📊 Model Evaluation
+
+The following results are derived from the experimental evaluation conducted in the accepted ICCIT 2024 paper.
+
+| Metric         | YOLOv8 Evaluation Result |
+|----------------|---------------------------|
+| mAP            | 95%                       |
+| Precision      | 99%                       |
+| Recall         | 96%                       |
+| PR Curve AUC   | 95%                       |
+| F1 Score       | 95% @ IoU 0.77            |
+
+**Key Insights:**
+- The **YOLOv8** model performs highly reliably in segmenting two-wheeler riders in traffic scenarios.
+- The **F1 Score** of 0.95 (at 77% IoU threshold) indicates excellent balance between precision and recall.
+- **Precision-Recall (PR) curve** suggests strong model confidence and minimal false positives.
+
+These results demonstrate the robustness of YOLOv8 in real-world conditions for rider detection.
+## 📈 Comparative Model Evaluation
+
+| Author/Model                 | mAP  | Precision | Recall |
+|-----------------------------|------|-----------|--------|
+| Nandhini (SSD)              | 78.1%| –         | –      |
+| Tomas (YOLOv5 + YOLOv7)     | 95%  | 95.6%     | 91%    |
+| Venkateswarlu (YOLOv8)      | –    | 88.63%    | 68.3%  |
+| Aboah (YOLOv8 + TTA)        | 95.3%| 91.8%     | –      |
+| **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
 
