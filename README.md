@@ -1,70 +1,31 @@
-# Rider-Helmet-Detection
-This project utilizes deep learning models YOLOv8 and VGG16 for real-time helmet detection in two-wheeler riders, aiming to improve traffic safety by automating law violator detection. It integrates computer vision to segment riders and classify helmet usage, achieving high accuracy in crowded environments.
-# 🪖 Rider Helmet Detection using YOLOv8 + VGG16
+Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach
+📄 [**[paper]**](https://ieeexplore.ieee.org/document/11022569) 📊 [[**dataset**]](https://universe.roboflow.com/rider-and-helmet-instance-segmentation-and-detection/riders-dataset-segmentation)
+## Methodology
+![Methodology]
+<img width="485" height="696" alt="Screenshot 2025-07-19 114159" src="https://github.com/user-attachments/assets/f10988bf-714a-4065-a99f-875aff44ea60" />
+We implemented a two-stage deep learning pipeline for automated rider and helmet detection. First, YOLOv8 was used for segmenting two-wheeler riders from images. Then, a VGG16-based classifier detected whether the identified rider was wearing a helmet or not. The dataset was preprocessed with augmentation (resizing, flipping, brightness adjustment), and redundant images were removed to improve accuracy. This hybrid approach ensures precise and reliable helmet compliance detection.
 
-[![Conference](https://img.shields.io/badge/Accepted%20Paper-ICCIT%202024-blue)]([https://ieeexplore.ieee.org/](https://ieeexplore.ieee.org/document/11022569))
-[![Roboflow Dataset](https://img.shields.io/badge/Dataset-Roboflow-green)]([https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip](https://app.roboflow.com/rider-and-helmet-instance-segmentation-and-detection))
+We designed a two-stage deep learning pipeline:
 
-This repository contains the full implementation of the **automated motorcycle rider and helmet detection system**, developed using **YOLOv8** for rider segmentation and **VGG16** for helmet classification.
+- **Preprocessing**: Removed redundant images and applied augmentation (resizing to 600x600, flipping, brightness +10%).
+- **Segmentation**: YOLOv8 detects and segments two-wheeler riders from road images.
+- **Classification**: VGG16 classifies whether detected riders are wearing helmets or not.
+- This hybrid approach minimizes misclassification and improves compliance detection.
 
-The research was accepted and published in:
 
-> 📄 **Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach**  
-> *27th International Conference on Computer and Information Technology (ICCIT 2024), IEEE*  
-> [View Paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/11022569) 
+## 📊 Model Performance Comparison (mAP, Precision, Recall)
 
----
+| **Authors**           | **Model**             | **mAP** | **Precision** | **Recall** |
+|------------------------|------------------------|--------:|--------------:|-----------:|
+| Nandhini [4]           | SSD Model              | 78.1%   | -             | -          |
+| Tomas [5]              | YOLOv5 + YOLOv7        | 95%     | 95.6%         | 91%        |
+| Venkateswarl [13]      | YOLOv8                 | -       | 88.63%        | 68.3%      |
+| Aboah [14]             | YOLOv8 + TTA           | 95.3%   | 91.8%         | -          |
+| Li [20]                | YOLO                   | 95%     | 92%           | 92%        |
+| **Our Model (Ours)**   | **YOLOv8 + VGG16**     | **95%** | **99%**       | **96%**    |
 
-## 📌 Project Overview
+✅ **Our model achieved the highest precision and recall**, making it ideal for real-world safety applications.
 
-This project tackles road safety concerns by automatically detecting two-wheeler riders and verifying helmet compliance using a dual-stage deep learning pipeline:
-
-1. **YOLOv8** – Segments riders from real-world traffic images  
-2. **VGG16** – Classifies cropped segments as *with helmet* or *without helmet*
-
----
-
-## 📁 Dataset Overview
-
-- **Total Images:** 3,301 (after augmentation)
-- **Classes:** `Rider With Helmet`, `Rider Without Helmet`
-- **Format:** YOLOv8
-- **Prepared Using:** [Roboflow](https://roboflow.com)
-
-### 🔗 Dataset Access:
-👉 [segmentation_dip - Roboflow]([https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip](https://app.roboflow.com/rider-and-helmet-instance-segmentation-and-detection))
-
----
-
-## 🧠 Model Architecture
-<img width="644" height="821" alt="Screenshot 2025-07-19 111113" src="https://github.com/user-attachments/assets/67b78607-7f98-45af-9ca1-2b7e4aba90b1" />
-
-## 📊 Model Evaluation
-The following results are derived from the experimental evaluation conducted in the accepted ICCIT 2024 paper.
-
-| Metric         | YOLOv8 Evaluation Result |
-|----------------|---------------------------|
-| mAP            | 95%                       |
-| Precision      | 99%                       |
-| Recall         | 96%                       |
-| PR Curve AUC   | 95%                       |
-| F1 Score       | 95% @ IoU 0.77            |
-
-**Key Insights:**
-- The **YOLOv8** model performs highly reliably in segmenting two-wheeler riders in traffic scenarios.
-- The **F1 Score** of 0.95 (at 77% IoU threshold) indicates excellent balance between precision and recall.
-- **Precision-Recall (PR) curve** suggests strong model confidence and minimal false positives.
-
-These results demonstrate the robustness of YOLOv8 in real-world conditions for rider detection.
-## 📈 Comparative Model Evaluation
-
-| Author/Model                 | mAP  | Precision | Recall |
-|-----------------------------|------|-----------|--------|
-| Nandhini (SSD)              | 78.1%| –         | –      |
-| Tomas (YOLOv5 + YOLOv7)     | 95%  | 95.6%     | 91%    |
-| Venkateswarlu (YOLOv8)      | –    | 88.63%    | 68.3%  |
-| Aboah (YOLOv8 + TTA)        | 95.3%| 91.8%     | –      |
-| **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
 
 ## Cite
 <pre>
