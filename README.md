@@ -11,7 +11,7 @@ The research was accepted and published in:
 
 > 📄 **Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach**  
 > *27th International Conference on Computer and Information Technology (ICCIT 2024), IEEE*  
-> [View Paper (IEEE Xplore)](10.1109/ICCIT64611.2024.11022569) 
+> [View Paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/11022569) 
 
 ---
 
@@ -32,7 +32,7 @@ This project tackles road safety concerns by automatically detecting two-wheeler
 - **Prepared Using:** [Roboflow](https://roboflow.com)
 
 ### 🔗 Dataset Access:
-👉 [segmentation_dip - Roboflow](https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip)
+👉 [segmentation_dip - Roboflow]([https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip](https://app.roboflow.com/rider-and-helmet-instance-segmentation-and-detection))
 
 ---
 
@@ -65,4 +65,19 @@ These results demonstrate the robustness of YOLOv8 in real-world conditions for 
 | Venkateswarlu (YOLOv8)      | –    | 88.63%    | 68.3%  |
 | Aboah (YOLOv8 + TTA)        | 95.3%| 91.8%     | –      |
 | **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
+
+##Cite
+@INPROCEEDINGS{11022569,
+  author={Hossen, Md Shaharia and Rimi, Maria Akter and Rahman, Tarek and Saad, Sakib Mahmood and Rahman, Raiyan},
+  booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)}, 
+  title={Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={305-310},
+  keywords={Deep learning;Image segmentation;Computer vision;Head;Road accidents;Pipelines;Mortality;Real-time systems;Road safety;Safety;YOLOv8;VGG16;CNN;Helmet detection;Computer Vision;Image Processing;Deep Learning;Reducing Misclassification;Traffic management},
+  doi={10.1109/ICCIT64611.2024.11022569}}
+
+##Contact
+For any queries, please contact us at trahman221182@bscse.uiu.ac.bd
 
