@@ -1,7 +1,7 @@
-Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach
+##Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach
+
 📄 [**[paper]**](https://ieeexplore.ieee.org/document/11022569) 📊 [[**dataset**]](https://universe.roboflow.com/rider-and-helmet-instance-segmentation-and-detection/riders-dataset-segmentation)
 ## Methodology
-![Methodology]
 <img width="485" height="696" alt="Screenshot 2025-07-19 114159" src="https://github.com/user-attachments/assets/f10988bf-714a-4065-a99f-875aff44ea60" />
 We implemented a two-stage deep learning pipeline for automated rider and helmet detection. First, YOLOv8 was used for segmenting two-wheeler riders from images. Then, a VGG16-based classifier detected whether the identified rider was wearing a helmet or not. The dataset was preprocessed with augmentation (resizing, flipping, brightness adjustment), and redundant images were removed to improve accuracy. This hybrid approach ensures precise and reliable helmet compliance detection.
 
