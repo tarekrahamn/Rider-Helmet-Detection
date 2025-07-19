@@ -37,4 +37,5 @@ This project tackles road safety concerns by automatically detecting two-wheeler
 ---
 
 ## 🧠 Model Architecture
+<img width="651" height="548" alt="Screenshot 2025-07-19 111539" src="https://github.com/user-attachments/assets/b3d08f5c-cec1-4263-96cd-6c98ad1b1267" />
 
