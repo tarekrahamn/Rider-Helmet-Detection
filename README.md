@@ -1,4 +1,7 @@
-##Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach
+#Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach
+
+***Accepted*** in `27th International Conference on Computer and Information Technology`
+
 
 📄 [**[paper]**](https://ieeexplore.ieee.org/document/11022569) 📊 [[**dataset**]](https://universe.roboflow.com/rider-and-helmet-instance-segmentation-and-detection/riders-dataset-segmentation)
 ## Methodology
