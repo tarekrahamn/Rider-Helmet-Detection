@@ -2,8 +2,8 @@
 This project utilizes deep learning models YOLOv8 and VGG16 for real-time helmet detection in two-wheeler riders, aiming to improve traffic safety by automating law violator detection. It integrates computer vision to segment riders and classify helmet usage, achieving high accuracy in crowded environments.
 # 🪖 Rider Helmet Detection using YOLOv8 + VGG16
 
-[![Conference](https://img.shields.io/badge/Accepted%20Paper-ICCIT%202024-blue)](https://ieeexplore.ieee.org/)
-[![Roboflow Dataset](https://img.shields.io/badge/Dataset-Roboflow-green)](https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip)
+[![Conference](https://img.shields.io/badge/Accepted%20Paper-ICCIT%202024-blue)]([https://ieeexplore.ieee.org/](https://ieeexplore.ieee.org/document/11022569))
+[![Roboflow Dataset](https://img.shields.io/badge/Dataset-Roboflow-green)]([https://universe.roboflow.com/dip-project-8u3bl/segmentation_dip](https://app.roboflow.com/rider-and-helmet-instance-segmentation-and-detection))
 
 This repository contains the full implementation of the **automated motorcycle rider and helmet detection system**, developed using **YOLOv8** for rider segmentation and **VGG16** for helmet classification.
 
@@ -11,7 +11,7 @@ The research was accepted and published in:
 
 > 📄 **Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach**  
 > *27th International Conference on Computer and Information Technology (ICCIT 2024), IEEE*  
-> [View Paper (IEEE Xplore)](https://ieeexplore.ieee.org/document/XXXXX) *(coming soon)*
+> [View Paper (IEEE Xplore)](10.1109/ICCIT64611.2024.11022569) 
 
 ---
 
@@ -38,8 +38,8 @@ This project tackles road safety concerns by automatically detecting two-wheeler
 
 ## 🧠 Model Architecture
 <img width="644" height="821" alt="Screenshot 2025-07-19 111113" src="https://github.com/user-attachments/assets/67b78607-7f98-45af-9ca1-2b7e4aba90b1" />
-## 📊 Model Evaluation
 
+## 📊 Model Evaluation
 The following results are derived from the experimental evaluation conducted in the accepted ICCIT 2024 paper.
 
 | Metric         | YOLOv8 Evaluation Result |
