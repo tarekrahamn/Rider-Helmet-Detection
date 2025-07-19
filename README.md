@@ -66,18 +66,18 @@ These results demonstrate the robustness of YOLOv8 in real-world conditions for 
 | Aboah (YOLOv8 + TTA)        | 95.3%| 91.8%     | –      |
 | **Ours (YOLOv8 + VGG16)**   | **95%** | **99%** | **96%** |
 
-## Cite
-
 @INPROCEEDINGS{11022569,
-  author={Hossen, Md Shaharia and Rimi, Maria Akter and Rahman, Tarek and Saad, Sakib Mahmood and Rahman, Raiyan},
-  booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)}, 
-  title={Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={305-310},
-  keywords={Deep learning;Image segmentation;Computer vision;Head;Road accidents;Pipelines;Mortality;Real-time systems;Road safety;Safety;YOLOv8;VGG16;CNN;Helmet detection;Computer Vision;Image Processing;Deep Learning;Reducing Misclassification;Traffic management},
-  doi={10.1109/ICCIT64611.2024.11022569}}
+  author    = {Md Shaharia Hossen and Maria Akter Rimi and Tarek Rahman and Sakib Mahmood Saad and Raiyan Rahman},
+  booktitle = {2024 27th International Conference on Computer and Information Technology (ICCIT)},
+  title     = {Enhancing Road Safety and Accountability Through Automated Rider and Helmet Detection: A Deep Learning Approach},
+  year      = {2024},
+  volume    = {},
+  number    = {},
+  pages     = {305--310},
+  keywords  = {Deep learning, Image segmentation, Computer vision, Head, Road accidents, Pipelines, Mortality, Real-time systems, Road safety, Safety, YOLOv8, VGG16, CNN, Helmet detection, Computer Vision, Image Processing, Deep Learning, Reducing Misclassification, Traffic management},
+  doi       = {10.1109/ICCIT64611.2024.11022569}
+}
+
 
 ## Contact
 For any queries, please contact us at trahman221182@bscse.uiu.ac.bd
